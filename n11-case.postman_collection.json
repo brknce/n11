@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "bc1c4eac-6d63-4ece-9d13-3be86acfe34a",
+		"name": "n11-case",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19348773"
+	},
+	"item": [
+		{
+			"name": "schedule tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/talks/schedule",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add talks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"talks\": [\n        {\"title\": \"Architecting Your Codebase\", \"duration\": 15},\n        {\"title\": \"Overdoing it in Python\", \"duration\": 45},\n        {\"title\": \"Flavors of Concurrency in Java\", \"duration\": 30},\n        {\"title\": \"Ruby Errors from Mismatched Gem Versions\", \"duration\": 45},\n        {\"title\": \"Microservices \\\"Just Right\\\"\", \"duration\": 60},\n        {\"title\": \"JUnit 5 - Shaping the Future of Testing on the JVM\", \"duration\": 45},\n        {\"title\": \"Cloud Native Java\", \"duration\": 5},\n        {\"title\": \"Communicating Over Distance\", \"duration\": 60},\n        {\"title\": \"AWS Technical Essentials\", \"duration\": 45},\n        {\"title\": \"Continuous Delivery\", \"duration\": 30},\n        {\"title\": \"Monitoring Reactive Applications\", \"duration\": 30},\n        {\"title\": \"Pair Programming vs Noise\", \"duration\": 45},\n        {\"title\": \"Rails Magic\", \"duration\": 60},\n        {\"title\": \"Clojure Ate Scala (on my project)\", \"duration\": 45},\n        {\"title\": \"Perfect Scalability\", \"duration\": 30},\n        {\"title\": \"Apache Spark\", \"duration\": 30},\n        {\"title\": \"Async Testing on JVM\", \"duration\": 60},\n        {\"title\": \"A World Without HackerNews\", \"duration\": 30},\n        {\"title\": \"User Interface CSS in Apps\", \"duration\": 30},\n        {\"title\": \"Advanced JavaScript Techniques\", \"duration\": 60},\n        {\"title\": \"Building Scalable Apps with Node.js\", \"duration\": 45},\n        {\"title\": \"Introduction to Machine Learning\", \"duration\": 30},\n        {\"title\": \"Kubernetes for Developers\", \"duration\": 45},\n        {\"title\": \"Effective Docker Usage\", \"duration\": 60},\n        {\"title\": \"Spring Boot in Practice\", \"duration\": 45},\n        {\"title\": \"Lightning Talk: DevOps Essentials\", \"duration\": 5},\n        {\"title\": \"Understanding React Hooks\", \"duration\": 60},\n        {\"title\": \"GraphQL vs REST APIs\", \"duration\": 45},\n        {\"title\": \"Functional Programming in JavaScript\", \"duration\": 30},\n        {\"title\": \"Microservices Architecture\", \"duration\": 60},\n        {\"title\": \"Securing Web Applications\", \"duration\": 45},\n        {\"title\": \"Lightning Talk: Serverless Concepts\", \"duration\": 5},\n        {\"title\": \"Optimizing SQL Queries\", \"duration\": 60},\n        {\"title\": \"Event-Driven Microservices\", \"duration\": 45},\n        {\"title\": \"Agile Methodologies\", \"duration\": 30},\n        {\"title\": \"Data Visualization with D3.js\", \"duration\": 45},\n        {\"title\": \"Building APIs with GraphQL\", \"duration\": 60},\n        {\"title\": \"Cloud Security Basics\", \"duration\": 45},\n        {\"title\": \"Performance Tuning in Java\", \"duration\": 30},\n        {\"title\": \"Introduction to TypeScript\", \"duration\": 30},\n        {\"title\": \"Advanced Python Programming\", \"duration\": 60},\n        {\"title\": \"Design Patterns in C#\", \"duration\": 45},\n        {\"title\": \"Testing Strategies for Microservices\", \"duration\": 30},\n        {\"title\": \"Developing Mobile Apps with Flutter\", \"duration\": 60},\n        {\"title\": \"Blockchain Basics\", \"duration\": 45},\n        {\"title\": \"Lightning Talk: WebAssembly\", \"duration\": 5},\n        {\"title\": \"Deep Dive into Docker\", \"duration\": 60},\n        {\"title\": \"Modern Frontend Development\", \"duration\": 45},\n        {\"title\": \"Introduction to DevOps\", \"duration\": 30},\n        {\"title\": \"Building Resilient Systems\", \"duration\": 60}\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/talks/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete talk",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Architecting Your Codebase\",\n    \"duration\": 15\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/talks/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update talk",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"A World Without HackerNews\",\n    \"duration\": 30,\n    \"newTitle\": \"A World Without HackerNews\",\n    \"newDuration\": 45\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/talks/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"talks",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
